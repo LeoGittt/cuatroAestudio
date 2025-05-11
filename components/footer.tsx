@@ -1,6 +1,15 @@
-import Link from "next/link"
-import Image from "next/image"
-import { Facebook, Twitter, Instagram, Linkedin, MapPin, Phone, Mail, Clock } from "lucide-react"
+import Link from "next/link";
+import Image from "next/image";
+import {
+  Facebook,
+  Twitter,
+  Instagram,
+  Linkedin,
+  MapPin,
+  Phone,
+  Mail,
+  Clock,
+} from "lucide-react";
 
 export function Footer() {
   return (
@@ -11,40 +20,26 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           <div>
             <Link href="/" className="inline-block mb-6">
-              <Image src="/images/logo-white.png" alt="Cuatro A Logo" width={150} height={40} className="h-10 w-auto" />
+              <Image
+                src="/lh.jpg"
+                alt="Cuatro A Logo"
+                width={150}
+                height={40}
+                className="h-10 w-auto"
+              />
             </Link>
             <p className="text-[#ABB9C6] font-montserrat mb-8 leading-relaxed">
-              Soluciones contables integrales para el crecimiento y éxito de tu empresa. Nuestro compromiso es ser un
-              verdadero aliado estratégico en tu negocio.
+              Soluciones contables integrales para el crecimiento y éxito de tu
+              empresa. Nuestro compromiso es ser un verdadero aliado estratégico
+              en tu negocio.
             </p>
             <div className="flex space-x-4">
               <Link
                 href="#"
                 className="text-[#ABB9C6] hover:text-white transition-colors bg-white/10 p-2.5 rounded-full hover:bg-white/20"
               >
-                <Facebook className="h-5 w-5" />
-                <span className="sr-only">Facebook</span>
-              </Link>
-              <Link
-                href="#"
-                className="text-[#ABB9C6] hover:text-white transition-colors bg-white/10 p-2.5 rounded-full hover:bg-white/20"
-              >
-                <Twitter className="h-5 w-5" />
-                <span className="sr-only">Twitter</span>
-              </Link>
-              <Link
-                href="#"
-                className="text-[#ABB9C6] hover:text-white transition-colors bg-white/10 p-2.5 rounded-full hover:bg-white/20"
-              >
                 <Instagram className="h-5 w-5" />
                 <span className="sr-only">Instagram</span>
-              </Link>
-              <Link
-                href="#"
-                className="text-[#ABB9C6] hover:text-white transition-colors bg-white/10 p-2.5 rounded-full hover:bg-white/20"
-              >
-                <Linkedin className="h-5 w-5" />
-                <span className="sr-only">LinkedIn</span>
               </Link>
             </div>
           </div>
@@ -165,19 +160,27 @@ export function Footer() {
             <ul className="space-y-4">
               <li className="flex items-start">
                 <MapPin className="h-5 w-5 text-[#003850] mr-3 mt-0.5 flex-shrink-0" />
-                <span className="text-[#ABB9C6] font-montserrat">Av. Corrientes 1234, Piso 5, CABA</span>
+                <span className="text-[#ABB9C6] font-montserrat">
+                  Av. Corrientes 1234, Piso 5, CABA
+                </span>
               </li>
               <li className="flex items-start">
                 <Phone className="h-5 w-5 text-[#003850] mr-3 mt-0.5 flex-shrink-0" />
-                <span className="text-[#ABB9C6] font-montserrat">+54 11 4567-8900</span>
+                <span className="text-[#ABB9C6] font-montserrat">
+                  +54 11 4567-8900
+                </span>
               </li>
               <li className="flex items-start">
                 <Mail className="h-5 w-5 text-[#003850] mr-3 mt-0.5 flex-shrink-0" />
-                <span className="text-[#ABB9C6] font-montserrat">contacto@cuatroa.com.ar</span>
+                <span className="text-[#ABB9C6] font-montserrat">
+                  contacto@cuatroa.com.ar
+                </span>
               </li>
               <li className="flex items-start">
                 <Clock className="h-5 w-5 text-[#003850] mr-3 mt-0.5 flex-shrink-0" />
-                <span className="text-[#ABB9C6] font-montserrat">Lunes a Viernes: 9:00 - 18:00</span>
+                <span className="text-[#ABB9C6] font-montserrat">
+                  Lunes a Viernes: 9:00 - 18:00
+                </span>
               </li>
             </ul>
           </div>
@@ -185,18 +188,25 @@ export function Footer() {
 
         <div className="border-t border-[#ABB9C6]/20 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-[#ABB9C6] font-montserrat text-sm mb-4 md:mb-0">
-            © {new Date().getFullYear()} Cuatro A. Todos los derechos reservados.
+            © {new Date().getFullYear()} Cuatro A. Todos los derechos
+            reservados.
           </p>
           <div className="flex space-x-6">
-            <Link href="#" className="text-[#ABB9C6] hover:text-white transition-colors text-sm font-montserrat">
+            <Link
+              href="#"
+              className="text-[#ABB9C6] hover:text-white transition-colors text-sm font-montserrat"
+            >
               Política de privacidad
             </Link>
-            <Link href="#" className="text-[#ABB9C6] hover:text-white transition-colors text-sm font-montserrat">
+            <Link
+              href="#"
+              className="text-[#ABB9C6] hover:text-white transition-colors text-sm font-montserrat"
+            >
               Términos y condiciones
             </Link>
           </div>
         </div>
       </div>
     </footer>
-  )
+  );
 }
