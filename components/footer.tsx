@@ -161,7 +161,7 @@ export function Footer() {
               <li className="flex items-start">
                 <MapPin className="h-5 w-5 text-[#003850] mr-3 mt-0.5 flex-shrink-0" />
                 <span className="text-[#ABB9C6] font-montserrat">
-                  Av. Corrientes 1234, Piso 5, CABA
+                  San Juan, Argentina
                 </span>
               </li>
               <li className="flex items-start">
