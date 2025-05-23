@@ -143,12 +143,12 @@ export function Hero() {
               className="relative rounded-3xl overflow-hidden shadow-2xl mx-auto max-w-md md:max-w-none"
             >
               {/* Main image with enhanced aspect ratio */}
-              <div className="aspect-[4/3] relative">
+              <div className="aspect-[16/9] max-h-[420px] relative">
                 <Image
                   src="/lh.jpg?height=600&width=800&text=Servicios+Financieros"
                   alt="Servicios Financieros"
                   fill
-                  className="object-cover"
+                  className="object-contain"
                   sizes="(max-width: 768px) 100vw, 40vw"
                   priority
                 />
